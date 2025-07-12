@@ -1,0 +1,17 @@
+// hash_preimage.zok
+// ZoKrates circuit for proving knowledge of a preimage to a hash
+// without revealing the preimage itself
+
+import "hashes/poseidon/poseidon" as poseidon;
+
+// Main circuit function
+// Private input: x (the secret we want to prove we know)
+// Public input: h (the hash that x should produce)
+def main(private field x, field h) -> bool {
+    // Compute Poseidon hash of the private input
+    field computed_hash = poseidon([x]);
+    
+    // Verify that the computed hash matches the public hash
+    // This proves we know the preimage x without revealing it
+    return computed_hash == h;
+}

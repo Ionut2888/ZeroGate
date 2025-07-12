@@ -1,0 +1,66 @@
+version: '3.8'
+
+services:
+  # ZoKrates Environment
+  zokrates:
+    build:
+      context: .
+      dockerfile: Dockerfile.zokrates
+    container_name: zerogate-zokrates
+    volumes:
+      - ./circuits:/app/circuits
+    working_dir: /app
+    command: tail -f /dev/null  # Keep container running
+    networks:
+      - zerogate-network
+
+  # Backend API Server
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: zerogate-backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - PORT=3001
+      - JWT_SECRET=your-super-secure-jwt-secret-key-here
+      - JWT_EXPIRES_IN=1h
+      - CIRCUITS_PATH=/app/circuits
+    volumes:
+      - ./circuits:/app/circuits
+      - ./server:/app
+      - /app/node_modules
+    depends_on:
+      - zokrates
+    networks:
+      - zerogate-network
+    command: npm run dev
+
+  # Frontend React App
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: zerogate-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - VITE_API_URL=http://localhost:3001
+      - VITE_APP_NAME=ZeroGate
+    volumes:
+      - ./client:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    networks:
+      - zerogate-network
+    command: npm run dev
+
+networks:
+  zerogate-network:
+    driver: bridge
+
+volumes:
+  circuits_data:

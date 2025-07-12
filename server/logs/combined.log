@@ -1,0 +1,208 @@
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-11 19:02:48"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-11 19:02:48"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-11 19:02:48"}
+{"level":"info","message":"::1 - - [11/Jul/2025:16:03:12 +0000] \"GET /health HTTP/1.1\" 200 107 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4652\"","service":"zerogate-server","timestamp":"2025-07-11 19:03:12"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-11 19:03:22"}
+{"level":"info","message":"::1 - - [11/Jul/2025:16:03:22 +0000] \"GET /api/auth/status HTTP/1.1\" 200 371 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4652\"","service":"zerogate-server","timestamp":"2025-07-11 19:03:22"}
+{"level":"info","message":"🧪 Test proof generation requested","service":"zerogate-server","timestamp":"2025-07-11 19:03:53"}
+{"level":"info","message":"::1 - - [11/Jul/2025:16:03:53 +0000] \"POST /api/auth/test-proof HTTP/1.1\" 503 112 \"-\" \"Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.26100.4652\"","service":"zerogate-server","timestamp":"2025-07-11 19:03:53"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-11 19:26:31"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-11 19:26:31"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-11 19:26:31"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-11 19:27:17"}
+{"level":"info","message":"::1 - - [11/Jul/2025:16:27:17 +0000] \"POST /api/auth/verify HTTP/1.1\" 503 112 \"http://localhost:3000/\" \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-11 19:27:17"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-11 23:24:35"}
+{"level":"info","message":"::1 - - [11/Jul/2025:20:24:35 +0000] \"POST /api/auth/verify HTTP/1.1\" 400 137 \"http://localhost:3000/\" \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-11 23:24:35"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 00:16:03"}
+{"level":"info","message":"::1 - - [11/Jul/2025:21:16:04 +0000] \"POST /api/auth/verify HTTP/1.1\" 503 112 \"http://localhost:3000/\" \"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 00:16:04"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 00:50:34"}
+{"level":"info","message":"::1 - - [11/Jul/2025:21:50:34 +0000] \"POST /api/auth/verify HTTP/1.1\" 503 112 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 00:50:34"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 00:51:38"}
+{"level":"info","message":"::1 - - [11/Jul/2025:21:51:38 +0000] \"POST /api/auth/verify HTTP/1.1\" 503 112 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 00:51:38"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 00:53:11"}
+{"level":"info","message":"::1 - - [11/Jul/2025:21:53:11 +0000] \"POST /api/auth/verify HTTP/1.1\" 503 112 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 00:53:11"}
+{"level":"info","message":"🛑 SIGINT received, shutting down gracefully","service":"zerogate-server","timestamp":"2025-07-12 00:53:48"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 00:54:11"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 00:54:11"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 00:54:11"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 00:54:33"}
+{"level":"info","message":"::1 - - [11/Jul/2025:21:54:33 +0000] \"POST /api/auth/verify HTTP/1.1\" 503 112 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 00:54:33"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 00:55:26"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 00:55:26"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 00:55:26"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 00:55:34"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 00:55:34"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 00:55:34"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 00:56:57"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 00:56:57"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 00:56:57"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 00:57:06"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 00:57:06"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 00:57:06"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 00:58:05"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 00:58:05"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 00:58:05"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 00:58:23"}
+{"level":"info","message":"::1 - - [11/Jul/2025:21:58:23 +0000] \"POST /api/auth/verify HTTP/1.1\" 503 112 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 00:58:23"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:00:15"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:00:15"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:00:15"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:00:48"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:00:48"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:00:48"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:01:06"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:01:06"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:01:06"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"✅ File exists: setup/simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"✅ File exists: setup/simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\simple_test_js\\simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"✅ File exists: build/simple_test_js/simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"� Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Proof:","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"🔍 Public inputs:","service":"zerogate-server","timestamp":"2025-07-12 01:01:14"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 01:01:16"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 01:01:16"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:01:16 +0000] \"POST /api/auth/verify HTTP/1.1\" 200 462 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:01:16"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:01:16"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:01:16 +0000] \"GET /api/auth/status HTTP/1.1\" 200 343 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:01:16"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:01:16"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:01:16 +0000] \"GET /api/auth/status HTTP/1.1\" 200 343 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:01:16"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:03:47"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:03:47"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:03:47"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:04:25"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:04:25"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:04:25"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:04:42 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:04:42 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:04:42 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:04:42 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:04:42"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"✅ File exists: setup/simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"✅ File exists: setup/simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\simple_test_js\\simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"✅ File exists: build/simple_test_js/simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"� Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Proof:","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"🔍 Public inputs:","service":"zerogate-server","timestamp":"2025-07-12 01:04:47"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 01:04:49"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 01:04:49"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:04:49 +0000] \"POST /api/auth/verify HTTP/1.1\" 200 462 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:04:49"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:04:49"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:04:49 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:04:49"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:04:49"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:04:49 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:04:49"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"✅ File exists: setup/simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"✅ File exists: setup/simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\simple_test_js\\simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"✅ File exists: build/simple_test_js/simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"� Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Proof:","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🔍 Public inputs:","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:08:03 +0000] \"POST /api/auth/verify HTTP/1.1\" 200 462 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:08:03 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:08:03 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:08:03"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:18:32"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:18:32"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:18:32"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:18:38"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:18:38"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:18:38"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:18:39 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:18:39 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:18:39 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:18:39 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:18:39"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:18:47"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:18:47"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:18:47"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 01:18:49"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:18:49 +0000] \"POST /api/auth/verify HTTP/1.1\" 500 85 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:18:49"}
+{"level":"error","message":"💥 Error in proof verification: verifyProofSchema is not defined","service":"zerogate-server","stack":"ReferenceError: verifyProofSchema is not defined\n    at verifyProof (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\src\\controllers\\authController.ts:46:30)\n    at Layer.handle [as handle_request] (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at next (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\route.js:149:13)\n    at Route.dispatch (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\route.js:119:3)\n    at Layer.handle [as handle_request] (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\index.js:284:15\n    at Function.process_params (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at Function.handle (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\index.js:175:3)\n    at router (C:\\Users\\Ionut\\Documents\\ZeroGate\\server\\node_modules\\express\\lib\\router\\index.js:47:12)","timestamp":"2025-07-12 01:18:49"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 01:19:08"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 01:19:08"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 01:19:08"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"✅ File exists: setup/simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"✅ File exists: setup/simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\simple_test_js\\simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"✅ File exists: build/simple_test_js/simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"� Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Proof:","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"🔍 Public inputs:","service":"zerogate-server","timestamp":"2025-07-12 01:19:15"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 01:19:16"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 01:19:16"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:19:16 +0000] \"POST /api/auth/verify HTTP/1.1\" 200 462 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:19:16"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:19:16"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:19:16 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:19:16"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:19:16"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:19:16 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:19:16"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"✅ File exists: setup/simple_test_vkey.json","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"✅ File exists: setup/simple_test_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\simple_test_js\\simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"✅ File exists: build/simple_test_js/simple_test.wasm","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"� Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Proof:","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🔍 Public inputs:","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:20:49 +0000] \"POST /api/auth/verify HTTP/1.1\" 200 462 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:20:49 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"::1 - - [11/Jul/2025:22:20:49 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 01:20:49"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 11:56:00"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 11:56:00"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 11:56:00"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}
+{"level":"info","message":"::1 - - [12/Jul/2025:08:56:19 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}
+{"level":"info","message":"::1 - - [12/Jul/2025:08:56:19 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}
+{"level":"info","message":"::1 - - [12/Jul/2025:08:56:19 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}
+{"level":"info","message":"::1 - - [12/Jul/2025:08:56:19 +0000] \"GET /api/auth/status HTTP/1.1\" 200 303 \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36\"","service":"zerogate-server","timestamp":"2025-07-12 11:56:19"}

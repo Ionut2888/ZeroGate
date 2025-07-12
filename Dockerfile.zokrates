@@ -1,0 +1,33 @@
+# ZoKrates Environment Dockerfile
+FROM ubuntu:20.04
+
+# Avoid timezone prompts
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    curl \
+    git \
+    build-essential \
+    pkg-config \
+    libssl-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Rust (required for ZoKrates)
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
+
+# Install ZoKrates
+RUN curl -LSfs get.zokrat.es | sh
+
+# Create app directory
+WORKDIR /app
+
+# Copy circuits
+COPY circuits/ ./circuits/
+
+# Set execute permissions for ZoKrates
+RUN chmod +x /usr/local/bin/zokrates
+
+# Default command
+CMD ["tail", "-f", "/dev/null"]

@@ -1,0 +1,15 @@
+{
+  "name": "zerogate",
+  "version": "1.0.0",
+  "description": "A secure, full-stack authentication application using zk-SNARKs to prove knowledge of secrets without revealing them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "circomlib": "^2.0.5"
+  }
+}
