@@ -6,7 +6,7 @@ export interface User {
   id: string;
   proofVerified: boolean;
   timestamp: string;
-  secret?: string;
+  username?: string;
 }
 
 export interface AuthState {
@@ -122,7 +122,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     }
   }, [state.isAuthenticated, state.token, state.user]);
 
-  const login = async (proof: any, publicInputs: string[], secret: string): Promise<void> => {
+  const login = async (proof: any, publicInputs: string[], username: string): Promise<void> => {
     dispatch({ type: 'AUTH_START' });
 
     try {
@@ -134,7 +134,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         body: JSON.stringify({
           proof,
           publicInputs,
-          secret,
+          username,
         }),
       });
 

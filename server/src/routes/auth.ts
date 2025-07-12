@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { verifyProof, getStatus, generateTestProof } from '../controllers/authController';
+import { verifyProof, getStatus, generateTestProof, getLoginHistory, getLoginStats, getMetricsHistory } from '../controllers/authController';
 import { authenticateToken } from '../middleware/auth';
 
 const router = Router();
@@ -33,5 +33,23 @@ router.get('/me', authenticateToken, (req: any, res) => {
     timestamp: new Date().toISOString()
   });
 });
+
+/**
+ * GET /api/auth/history
+ * Get user login history (protected route)
+ */
+router.get('/history', authenticateToken, getLoginHistory);
+
+/**
+ * GET /api/auth/stats
+ * Get user login statistics (protected route)
+ */
+router.get('/stats', authenticateToken, getLoginStats);
+
+/**
+ * GET /api/auth/metrics
+ * Get user metrics history for charts (protected route)
+ */
+router.get('/metrics', authenticateToken, getMetricsHistory);
 
 export default router;

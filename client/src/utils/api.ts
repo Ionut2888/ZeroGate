@@ -52,6 +52,16 @@ export const api = {
   getCurrentUser: () =>
     apiClient.get('/api/auth/me'),
 
+  // Login history and metrics
+  getLoginHistory: (limit?: number) =>
+    apiClient.get(`/api/auth/history${limit ? `?limit=${limit}` : ''}`),
+
+  getLoginStats: () =>
+    apiClient.get('/api/auth/stats'),
+
+  getMetricsHistory: (days?: number) =>
+    apiClient.get(`/api/auth/metrics${days ? `?days=${days}` : ''}`),
+
   // Health check
   healthCheck: () =>
     apiClient.get('/health'),
