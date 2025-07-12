@@ -29,7 +29,7 @@ The project consists of three main components:
 ### 3. **Backend** (`/server`)
 - **Node.js** with **Express** and **TypeScript**
 - **JWT-based** session management
-- **zk-SNARK proof verification** using ZoKrates
+- **zk-SNARK proof verification** using SnarkJS
 - RESTful API for authentication endpoints
 - **Winston** logging and error handling
 
@@ -122,7 +122,7 @@ ZeroGate/
 - **Circom 2.0**: Circuit description language
 - **SnarkJS**: JavaScript library for zk-SNARKs
 - **Poseidon Hash**: Cryptographic hash function optimized for zk-SNARKs
-- **ZoKrates**: Toolbox for zkSNARKs on Ethereum (used for verification)
+- **Groth16**: Efficient zk-SNARK proving system
 - **React 18**: Frontend framework with hooks
 - **TypeScript**: Type-safe JavaScript
 - **Express.js**: Web framework for Node.js
@@ -234,13 +234,13 @@ This project is licensed under the ISC License - see the LICENSE file for detail
 
 - **Circom** team for the circuit language
 - **SnarkJS** for JavaScript zk-SNARK utilities
-- **ZoKrates** for the verification framework
+- **Groth16** proving system
 - **Poseidon** hash function designers
 
 ## 🔗 Links
 
 - [Circom Documentation](https://docs.circom.io/)
 - [SnarkJS Documentation](https://github.com/iden3/snarkjs)
-- [ZoKrates Documentation](https://zokrates.github.io/)
+- [Groth16 Paper](https://eprint.iacr.org/2016/260.pdf)
 - [Zero-Knowledge Proofs Explained](https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/)
 
