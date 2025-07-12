@@ -72,38 +72,38 @@ let circuitArtifacts: CircuitArtifacts = {};
 
 /**
  * Load circuit artifacts (WASM, proving key, verification key)
- * Now loads REAL circuit artifacts instead of mocks
+ * Now loads REAL circuit artifacts for hash preimage circuit
  */
 export const loadCircuitArtifacts = async (): Promise<void> => {
   try {
-    console.log('🔧 Loading real circuit artifacts...');
+    console.log('🔧 Loading hash preimage circuit artifacts...');
     
     // Base URL for circuit artifacts - adjust this to your actual hosting
     const baseUrl = '/circuits';
     
-    // Load WASM file
-    const wasmResponse = await fetch(`${baseUrl}/build/simple_test_js/simple_test.wasm`);
-    if (!wasmResponse.ok) throw new Error('Failed to load WASM file');
+    // Load WASM file for hash preimage circuit
+    const wasmResponse = await fetch(`${baseUrl}/build/hash_preimage_js/hash_preimage.wasm`);
+    if (!wasmResponse.ok) throw new Error('Failed to load hash preimage WASM file');
     circuitArtifacts.wasm = await wasmResponse.arrayBuffer();
     
-    // Load proving key (zkey file)
-    const zkeyResponse = await fetch(`${baseUrl}/setup/simple_test_0001.zkey`);
-    if (!zkeyResponse.ok) throw new Error('Failed to load proving key');
+    // Load proving key (zkey file) for hash preimage circuit
+    const zkeyResponse = await fetch(`${baseUrl}/setup/hash_preimage_0001.zkey`);
+    if (!zkeyResponse.ok) throw new Error('Failed to load hash preimage proving key');
     circuitArtifacts.zkey = await zkeyResponse.arrayBuffer();
     
-    // Load verification key
-    const vkeyResponse = await fetch(`${baseUrl}/setup/simple_test_vkey.json`);
-    if (!vkeyResponse.ok) throw new Error('Failed to load verification key');
+    // Load verification key for hash preimage circuit
+    const vkeyResponse = await fetch(`${baseUrl}/setup/verification_key.json`);
+    if (!vkeyResponse.ok) throw new Error('Failed to load hash preimage verification key');
     circuitArtifacts.vkey = await vkeyResponse.json();
     
-    console.log('✅ Circuit artifacts loaded successfully!');
+    console.log('✅ Hash preimage circuit artifacts loaded successfully!');
     console.log('📊 WASM size:', circuitArtifacts.wasm.byteLength, 'bytes');
-    console.log('� Proving key size:', circuitArtifacts.zkey.byteLength, 'bytes');
+    console.log('🔑 Proving key size:', circuitArtifacts.zkey.byteLength, 'bytes');
     console.log('📊 Verification key loaded');
     
   } catch (error) {
-    console.error('❌ Failed to load circuit artifacts:', error);
-    throw new Error(`Circuit artifacts loading failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    console.error('❌ Failed to load hash preimage circuit artifacts:', error);
+    throw new Error(`Hash preimage circuit artifacts loading failed: ${error instanceof Error ? error.message : 'Unknown error'}`);
   }
 };
 
@@ -143,26 +143,75 @@ export const stringToField = (input: string): string => {
 };
 
 /**
- * Compute Poseidon hash (placeholder - would use actual Circom circuit)
+ * Compute Poseidon hash using snarkjs or fallback implementation
  */
 export const poseidonHash = async (input: string): Promise<string> => {
-  // TODO: Implement actual Poseidon hash using a Circom circuit
-  // For now, use a simple hash as placeholder
-  console.log('⚠️ Using placeholder hash - implement Poseidon circuit');
-  
-  const fieldValue = stringToField(input);
-  
-  // Simple hash placeholder - replace with actual Poseidon computation
-  const simpleHash = BigInt(fieldValue) * BigInt(7) % BigInt('21888242871839275222246405745257275088548364400416034343698204186575808495617');
-  
-  return simpleHash.toString();
+  try {
+    // Convert string to field element
+    const fieldValue = stringToField(input);
+    
+    console.log('🔧 Computing Poseidon hash for field value:', fieldValue);
+    
+    // First, try using snarkjs built-in Poseidon if available
+    try {
+      const snarkjs = await getSnarkjs();
+      if (snarkjs && snarkjs.poseidon) {
+        const hash = snarkjs.poseidon([BigInt(fieldValue)]);
+        const hashString = hash.toString();
+        console.log('✅ Poseidon hash computed using snarkjs:', hashString);
+        return hashString;
+      }
+    } catch (snarkjsError) {
+      console.log('⚠️ snarkjs Poseidon not available, trying circomlibjs...');
+    }
+    
+    // Try poseidon-lite for Poseidon hash (more browser-compatible)
+    try {
+      const { poseidon1 } = await import('poseidon-lite');
+      
+      const hash = poseidon1([BigInt(fieldValue)]);
+      const hashString = hash.toString();
+      console.log('✅ Poseidon hash computed using poseidon-lite:', hashString);
+      return hashString;
+      
+    } catch (poseidonLiteError) {
+      console.error('❌ Failed to load poseidon-lite:', poseidonLiteError);
+    }
+    
+    // Fallback to circomlibjs for Poseidon hash
+    try {
+      const circomlibjs = await import('circomlibjs');
+      
+      // Try different ways to access poseidon1
+      const poseidon1 = circomlibjs.poseidon1 || 
+                       circomlibjs.default?.poseidon1 || 
+                       (circomlibjs as any).poseidon1;
+      
+      if (typeof poseidon1 !== 'function') {
+        throw new Error('poseidon1 function not found in circomlibjs');
+      }
+      
+      const hash = poseidon1([BigInt(fieldValue)]);
+      const hashString = hash.toString();
+      console.log('✅ Poseidon hash computed using circomlibjs:', hashString);
+      return hashString;
+      
+    } catch (circomlibError) {
+      console.error('❌ Failed to load circomlibjs Poseidon:', circomlibError);
+      throw new Error(`Poseidon hash not available: ${circomlibError instanceof Error ? circomlibError.message : 'circomlibjs not found'}`);
+    }
+    
+  } catch (error) {
+    console.error('❌ Poseidon hash computation failed:', error);
+    throw new Error(`Failed to compute Poseidon hash: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
 };
 
 /**
- * Generate a zk-SNARK proof for knowledge of secret preimage
- * Now uses REAL snarkjs proof generation
+ * Generate a zk-SNARK proof for knowledge of secret preimage using hash preimage circuit
+ * This function creates a proof that the user knows a secret that hashes to a given public hash
  */
-export const generateProof = async (secret: string): Promise<SnarkProof> => {
+export const generateProof = async (secret: string, publicHash?: string): Promise<SnarkProof> => {
   try {
     // Ensure circuit artifacts are loaded
     if (!circuitArtifacts.wasm || !circuitArtifacts.zkey) {
@@ -176,15 +225,18 @@ export const generateProof = async (secret: string): Promise<SnarkProof> => {
     const secretField = stringToField(secret);
     console.log('🔍 Secret field value:', secretField);
     
-    // For the simple test circuit, we use the secret as both input and expected value
-    // This proves we know the secret without revealing it
+    // If no public hash provided, compute it from the secret
+    const hashValue = publicHash || await poseidonHash(secret);
+    console.log('🔍 Public hash value:', hashValue);
+    
+    // For the hash preimage circuit: prove we know the preimage of the given hash
     const circuitInputs = {
-      secret: secretField,
-      expectedValue: secretField  // In a real circuit, this would be a hash
+      preimage: secretField,  // Private input - the secret
+      hash: hashValue         // Public input - the expected hash
     };
     
-    console.log('🔍 Circuit inputs:', circuitInputs);
-    console.log('🔧 Generating REAL zk-SNARK proof...');
+    console.log('🔍 Hash preimage circuit inputs:', circuitInputs);
+    console.log('🔧 Generating zk-SNARK proof for hash preimage...');
     
     // Convert ArrayBuffer to Uint8Array for snarkjs compatibility
     const wasmBuffer = new Uint8Array(circuitArtifacts.wasm!);
@@ -193,7 +245,7 @@ export const generateProof = async (secret: string): Promise<SnarkProof> => {
     console.log('🔍 WASM buffer type:', wasmBuffer.constructor.name, 'length:', wasmBuffer.length);
     console.log('🔍 ZKey buffer type:', zkeyBuffer.constructor.name, 'length:', zkeyBuffer.length);
     
-    // Generate REAL proof using snarkjs with proper buffer format
+    // Generate REAL proof using snarkjs with hash preimage circuit
     const { proof, publicSignals } = await snarkjs.groth16.fullProve(
       circuitInputs,
       wasmBuffer,
@@ -372,5 +424,107 @@ export const debugStringToField = (input: string): void => {
     console.log('Is valid BigInt?', /^\d+$/.test(result));
   } catch (error) {
     console.error('Conversion failed:', error);
+  }
+};
+
+/**
+ * Utility functions for managing public hashes in localStorage
+ */
+
+/**
+ * Store a public hash in localStorage for a user
+ */
+export const storePublicHash = (username: string, publicHash: string): void => {
+  try {
+    const stored = localStorage.getItem('zerogate_users') || '{}';
+    const users = JSON.parse(stored);
+    users[username] = { publicHash, timestamp: Date.now() };
+    localStorage.setItem('zerogate_users', JSON.stringify(users));
+    console.log('✅ Public hash stored for user:', username);
+  } catch (error) {
+    console.error('❌ Failed to store public hash:', error);
+    throw new Error('Failed to store public hash in localStorage');
+  }
+};
+
+/**
+ * Retrieve a public hash from localStorage for a user
+ */
+export const getPublicHash = (username: string): string | null => {
+  try {
+    const stored = localStorage.getItem('zerogate_users');
+    if (!stored) return null;
+    
+    const users = JSON.parse(stored);
+    const userData = users[username];
+    
+    return userData?.publicHash || null;
+  } catch (error) {
+    console.error('❌ Failed to retrieve public hash:', error);
+    return null;
+  }
+};
+
+/**
+ * Check if a user exists (has a registered public hash)
+ */
+export const userExists = (username: string): boolean => {
+  return getPublicHash(username) !== null;
+};
+
+/**
+ * Get all registered users
+ */
+export const getRegisteredUsers = (): string[] => {
+  try {
+    const stored = localStorage.getItem('zerogate_users');
+    if (!stored) return [];
+    
+    const users = JSON.parse(stored);
+    return Object.keys(users);
+  } catch (error) {
+    console.error('❌ Failed to get registered users:', error);
+    return [];
+  }
+};
+
+/**
+ * Register a new user with their secret (computes and stores public hash)
+ */
+export const registerUser = async (username: string, secret: string): Promise<string> => {
+  try {
+    // Check if user already exists
+    if (userExists(username)) {
+      throw new Error('Username already exists');
+    }
+    
+    // Validate inputs
+    const secretValidation = validateSecret(secret);
+    if (!secretValidation.isValid) {
+      throw new Error(secretValidation.error || 'Invalid secret');
+    }
+    
+    if (!username || username.trim().length === 0) {
+      throw new Error('Username cannot be empty');
+    }
+    
+    if (username.length < 3) {
+      throw new Error('Username must be at least 3 characters long');
+    }
+    
+    // Compute public hash of the secret
+    console.log('🔧 Computing public hash for registration...');
+    const publicHash = await poseidonHash(secret);
+    
+    // Store the public hash
+    storePublicHash(username, publicHash);
+    
+    console.log('✅ User registered successfully:', username);
+    console.log('🔍 Public hash:', publicHash);
+    
+    return publicHash;
+  } catch (error) {
+    console.error('❌ User registration failed:', error);
+    throw error;
   }
 };

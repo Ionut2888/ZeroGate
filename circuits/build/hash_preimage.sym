@@ -1,6 +1,6 @@
 1,1,70,main.valid
-2,2,70,main.preimage
-3,3,70,main.hash
+2,2,70,main.hash
+3,3,70,main.preimage
 4,-1,69,main.poseidon.out
 5,-1,69,main.poseidon.inputs[0]
 6,-1,68,main.poseidon.pEx.out[0]

@@ -1,8 +1,13 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { generateProof, formatProofForSubmission, validateSecret } from '../utils/snarkjs';
+import { generateProof, formatProofForSubmission, validateSecret, getPublicHash, getRegisteredUsers } from '../utils/snarkjs';
 
-const Login: React.FC = () => {
+interface LoginProps {
+  onSwitchToRegister: () => void;
+}
+
+const Login: React.FC<LoginProps> = ({ onSwitchToRegister }) => {
+  const [username, setUsername] = useState('');
   const [secret, setSecret] = useState('');
   const [isGeneratingProof, setIsGeneratingProof] = useState(false);
   const [validationError, setValidationError] = useState('');
@@ -11,6 +16,19 @@ const Login: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     clearError();
+    
+    // Validate username
+    if (!username || username.trim().length === 0) {
+      setValidationError('Username cannot be empty');
+      return;
+    }
+    
+    // Check if user exists
+    const publicHash = getPublicHash(username);
+    if (!publicHash) {
+      setValidationError('Username not found. Please register first.');
+      return;
+    }
     
     // Validate secret
     const validation = validateSecret(secret);
@@ -23,26 +41,32 @@ const Login: React.FC = () => {
     try {
       setIsGeneratingProof(true);
       
-      // Generate proof using ZoKrates
-      console.log('🔐 Generating zk-SNARK proof...');
-      const zkProof = await generateProof(secret);
+      // Generate proof using ZK-SNARK hash preimage circuit
+      console.log('🔐 Generating zk-SNARK proof for hash preimage...');
+      console.log('🔍 Using public hash:', publicHash);
       
-      // Format proof for API
+      const zkProof = await generateProof(secret, publicHash);
+      
+      // Format proof for API - use the actual public signals from the proof
       const { proof, publicInputs } = formatProofForSubmission(zkProof);
       
       console.log('✅ Proof generated, submitting for verification...');
+      console.log('🔍 Public inputs from proof:', publicInputs);
+      console.log('🔍 Proof structure:', proof);
       
-      // Submit proof for verification
-      await login(proof, publicInputs, secret);
+      // Submit proof for verification (using username and proof)
+      await login(proof, publicInputs, username);
       
     } catch (err: any) {
       console.error('❌ Login failed:', err);
+      setValidationError('Authentication failed. Please check your secret.');
     } finally {
       setIsGeneratingProof(false);
     }
   };
 
   const isLoading = loading || isGeneratingProof;
+  const registeredUsers = getRegisteredUsers();
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center px-4">
@@ -67,6 +91,26 @@ const Login: React.FC = () => {
           <div className="card-content">
             <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
+                <label htmlFor="username" className="block text-sm font-medium text-gray-700">
+                  Username
+                </label>
+                <div className="mt-1">
+                  <input
+                    id="username"
+                    name="username"
+                    type="text"
+                    autoComplete="username"
+                    required
+                    className="input"
+                    placeholder="Enter your username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    disabled={isLoading}
+                  />
+                </div>
+              </div>
+              
+              <div>
                 <label htmlFor="secret" className="block text-sm font-medium text-gray-700">
                   Secret
                 </label>
@@ -88,6 +132,14 @@ const Login: React.FC = () => {
                   <p className="mt-2 text-sm text-red-600">{validationError}</p>
                 )}
               </div>
+
+              {/* Show registered users if any exist */}
+              {registeredUsers.length > 0 && (
+                <div className="text-sm text-gray-600">
+                  <p className="font-medium">Registered users:</p>
+                  <p className="mt-1">{registeredUsers.join(', ')}</p>
+                </div>
+              )}
 
               {/* Error Alert */}
               {error && (
@@ -131,6 +183,18 @@ const Login: React.FC = () => {
                 </button>
               </div>
 
+              {/* Switch to Register */}
+              <div className="text-center">
+                <button
+                  type="button"
+                  onClick={onSwitchToRegister}
+                  className="text-sm text-primary-600 hover:text-primary-500 font-medium"
+                  disabled={isLoading}
+                >
+                  Don't have an account? Register here
+                </button>
+              </div>
+
               {/* Info */}
               <div className="alert-info">
                 <div className="flex">
@@ -145,8 +209,8 @@ const Login: React.FC = () => {
                     </h3>
                     <div className="mt-2 text-sm text-blue-700">
                       <p>
-                        We use zk-SNARKs to prove you know the secret without revealing it to anyone, 
-                        including the server. Your secret never leaves your browser.
+                        We use zk-SNARKs to prove you know the secret that hashes to your stored public hash 
+                        without revealing the secret to anyone. Your secret never leaves your browser.
                       </p>
                     </div>
                   </div>

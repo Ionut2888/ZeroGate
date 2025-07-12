@@ -16,11 +16,18 @@
   },
   "dependencies": {
     "axios": "^1.10.0",
+    "buffer": "^6.0.3",
     "circomlib": "^2.0.5",
+    "circomlibjs": "^0.1.7",
+    "crypto-browserify": "^3.12.1",
+    "events": "^3.3.0",
+    "poseidon-lite": "^0.3.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.3",
     "snarkjs": "^0.7.5",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5",
     "zokrates-js": "^1.1.9"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
-import Login from './components/Login';
+import Auth from './components/Auth';
 import Dashboard from './components/Dashboard';
 import ProtectedRoute from './components/ProtectedRoute';
 
@@ -12,7 +12,7 @@ const AppRoutes: React.FC = () => {
     <Routes>
       <Route 
         path="/" 
-        element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <Login />} 
+        element={isAuthenticated ? <Navigate to="/dashboard" replace /> : <Auth />} 
       />
       <Route 
         path="/dashboard" 

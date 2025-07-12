@@ -1,0 +1,80 @@
+version: '3.8'
+
+services:
+  zerogate-server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.production
+    container_name: zerogate-server-prod
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - HOST=0.0.0.0
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_EXPIRES_IN=1h
+      - CIRCUITS_PATH=/app/circuits
+      - CORS_ORIGIN=https://your-domain.com
+      - LOG_LEVEL=info
+      - RATE_LIMIT_WINDOW_MS=900000
+      - RATE_LIMIT_MAX=100
+    volumes:
+      - ./circuits:/app/circuits:ro
+      - zerogate-logs:/app/logs
+    ports:
+      - "3001:3001"
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3001/health', (res) => { process.exit(res.statusCode === 200 ? 0 : 1) })"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    networks:
+      - zerogate-network
+
+  zerogate-client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile.production
+    container_name: zerogate-client-prod
+    restart: unless-stopped
+    environment:
+      - VITE_API_BASE_URL=https://api.your-domain.com
+    ports:
+      - "80:80"
+    depends_on:
+      zerogate-server:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+      start_period: 10s
+    networks:
+      - zerogate-network
+
+  # Optional: Reverse proxy with SSL termination
+  nginx-proxy:
+    image: nginx:alpine
+    container_name: zerogate-proxy
+    restart: unless-stopped
+    ports:
+      - "443:443"
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - zerogate-server
+      - zerogate-client
+    networks:
+      - zerogate-network
+
+volumes:
+  zerogate-logs:
+    driver: local
+
+networks:
+  zerogate-network:
+    driver: bridge

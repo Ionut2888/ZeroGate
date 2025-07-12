@@ -29,4 +29,5 @@ template HashPreimage() {
 }
 
 // Main component - this is what gets compiled
-component main = HashPreimage();
+// The hash input should be public so the verifier knows what hash is being proven
+component main{public [hash]} = HashPreimage();

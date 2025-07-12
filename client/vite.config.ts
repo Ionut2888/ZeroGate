@@ -8,6 +8,12 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
+      // Node.js polyfills for browser compatibility
+      buffer: 'buffer',
+      events: 'events',
+      util: 'util',
+      stream: 'stream-browserify',
+      crypto: 'crypto-browserify',
     },
   },
   server: {
@@ -35,5 +41,18 @@ export default defineConfig({
   define: {
     // Ensure environment variables are available
     'process.env': process.env,
+    // Define global for Node.js compatibility
+    global: 'globalThis',
+  },
+  optimizeDeps: {
+    include: [
+      'buffer', 
+      'events', 
+      'util', 
+      'stream-browserify',
+      'crypto-browserify',
+      'circomlibjs'
+    ],
+    exclude: [],
   },
 })
