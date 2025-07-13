@@ -655,3 +655,246 @@
 {"level":"info","message":"✅ User authenticated: user_1752337132291","service":"zerogate-server","timestamp":"2025-07-12 19:23:27"}
 {"level":"info","message":"✅ User authenticated: user_1752337132291","service":"zerogate-server","timestamp":"2025-07-12 19:23:28"}
 {"level":"info","message":"✅ User authenticated: user_1752337132291","service":"zerogate-server","timestamp":"2025-07-12 19:23:28"}
+{"level":"info","message":"✅ User authenticated: user_1752337132291","service":"zerogate-server","timestamp":"2025-07-12 19:24:39"}
+{"level":"info","message":"✅ User authenticated: user_1752337132291","service":"zerogate-server","timestamp":"2025-07-12 19:24:39"}
+{"level":"info","message":"✅ User authenticated: user_1752337132291","service":"zerogate-server","timestamp":"2025-07-12 19:25:02"}
+{"level":"info","message":"✅ User authenticated: user_1752337132291","service":"zerogate-server","timestamp":"2025-07-12 19:25:02"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"✅ File exists: setup/verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"✅ File exists: setup/hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\hash_preimage_js\\hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"✅ File exists: build/hash_preimage_js/hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Verification key loaded successfully","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"🔍 No public signals in proof, using provided inputs","service":"zerogate-server","timestamp":"2025-07-12 19:28:51"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 19:28:53"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 19:28:53"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 19:28:53"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 19:28:53"}
+{"level":"info","message":"✅ User authenticated: user_1752337733016","service":"zerogate-server","timestamp":"2025-07-12 19:28:54"}
+{"level":"info","message":"✅ User authenticated: user_1752337733016","service":"zerogate-server","timestamp":"2025-07-12 19:28:54"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 19:31:25"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 19:31:25"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 19:31:25"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-12 19:31:32"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-12 19:31:32"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-12 19:31:32"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"✅ File exists: setup/verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"✅ File exists: setup/hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\hash_preimage_js\\hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"✅ File exists: build/hash_preimage_js/hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Verification key loaded successfully","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"🔍 No public signals in proof, using provided inputs","service":"zerogate-server","timestamp":"2025-07-12 19:31:50"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 19:31:51"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 19:31:51"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 19:31:52"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 19:31:52"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:57"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:57"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:58"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:58"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:58"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:58"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:59"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:31:59"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:32:01"}
+{"level":"info","message":"✅ User authenticated: user_1752337911928","service":"zerogate-server","timestamp":"2025-07-12 19:32:01"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"✅ File exists: setup/verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"✅ File exists: setup/hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\hash_preimage_js\\hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"✅ File exists: build/hash_preimage_js/hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Verification key loaded successfully","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"🔍 No public signals in proof, using provided inputs","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 19:32:10"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:16"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:16"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:18"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:18"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:19"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:19"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:29"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:29"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:32"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:32"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:32"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:32"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:33"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:33"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:34"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:34"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:35"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:35"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:35"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:35"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:35"}
+{"level":"info","message":"✅ User authenticated: user_1752337930581","service":"zerogate-server","timestamp":"2025-07-12 19:32:35"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:42:52"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:42:52"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:42:52"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:42:52"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:04"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:04"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:04"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:04"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:05"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:05"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:05"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:05"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:06"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:06"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:43:09"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:43:09"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:43:09"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 21:43:09"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:10"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:10"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:11"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:11"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:12"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 21:43:12"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:27"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:27"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:28"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:28"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:28"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:28"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:29"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-12 22:33:29"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"✅ File exists: setup/verification_key.json","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"✅ File exists: setup/hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\hash_preimage_js\\hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"✅ File exists: build/hash_preimage_js/hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Verification key loaded successfully","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"🔍 No public signals in proof, using provided inputs","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-12 22:33:37"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:38"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:38"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:39"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:39"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:40"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:40"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:49"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:49"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:49"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:49"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:50"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:50"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:50"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:50"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:51"}
+{"level":"info","message":"✅ User authenticated: user_1752348817287","service":"zerogate-server","timestamp":"2025-07-12 22:33:51"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 04:08:57"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 04:08:57"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 04:09:28"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 04:09:28"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 04:09:28"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 04:09:28"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:20:51"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:20:51"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:20:51"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:20:51"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:43:53"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:43:53"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:43:53"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:43:53"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:47:29"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:47:29"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:47:29"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:47:29"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:51"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:51"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:51"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:51"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:52"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:52"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:53"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:53"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:54"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:47:54"}
+{"level":"info","message":"🚀 ZeroGate server running on port 3001","service":"zerogate-server","timestamp":"2025-07-13 11:48:06"}
+{"level":"info","message":"📚 Environment: development","service":"zerogate-server","timestamp":"2025-07-13 11:48:06"}
+{"level":"info","message":"🔐 CORS origin: http://localhost:3000","service":"zerogate-server","timestamp":"2025-07-13 11:48:06"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:49:36"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:49:36"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:06"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:06"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:06"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:06"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:20"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:20"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:30"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:30"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:37"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:37"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:49"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:50:49"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:51:18"}
+{"level":"warn","message":"⚠️ Invalid token: jwt expired","service":"zerogate-server","timestamp":"2025-07-13 11:51:18"}
+{"level":"info","message":"🔐 Proof verification request received","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Checking circuit setup...","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Circuits path:","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\verification_key.json","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"✅ File exists: setup/verification_key.json","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\setup\\hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"✅ File exists: setup/hash_preimage_0001.zkey","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Checking file: C:\\Users\\Ionut\\Documents\\ZeroGate\\circuits\\build\\hash_preimage_js\\hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"✅ File exists: build/hash_preimage_js/hash_preimage.wasm","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"✅ All circuit files found","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Starting proof verification with snarkjs...","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Verification key loaded successfully","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 Verifying proof with snarkjs...","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"🔍 No public signals in proof, using provided inputs","service":"zerogate-server","timestamp":"2025-07-13 11:51:31"}
+{"level":"info","message":"✅ Proof verification result: true","service":"zerogate-server","timestamp":"2025-07-13 11:51:32"}
+{"level":"info","message":"✅ Proof verified successfully, JWT issued","service":"zerogate-server","timestamp":"2025-07-13 11:51:32"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:51:32"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:51:32"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:51:35"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:51:35"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:51:42"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:51:42"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:51:49"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:51:49"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:52:04"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:52:04"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:52:07"}
+{"level":"info","message":"✅ User authenticated: user_1752396692585","service":"zerogate-server","timestamp":"2025-07-13 11:52:07"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:52:26"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:52:26"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:52:26"}
+{"level":"info","message":"📊 Status check requested","service":"zerogate-server","timestamp":"2025-07-13 11:52:26"}

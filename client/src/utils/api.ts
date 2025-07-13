@@ -9,6 +9,14 @@ const apiClient = axios.create({
   },
 });
 
+// Store logout callback to be set by AuthContext
+let logoutCallback: (() => void) | null = null;
+
+// Function to set the logout callback
+export const setLogoutCallback = (callback: () => void) => {
+  logoutCallback = callback;
+};
+
 // Request interceptor to add auth token
 apiClient.interceptors.request.use(
   (config) => {
@@ -27,11 +35,29 @@ apiClient.interceptors.request.use(
 apiClient.interceptors.response.use(
   (response) => response,
   (error) => {
-    if (error.response?.status === 401) {
-      // Token expired or invalid, clear storage
-      localStorage.removeItem('zerogate_token');
-      localStorage.removeItem('zerogate_user');
-      window.location.href = '/';
+    if (error.response?.status === 401 || error.response?.status === 403) {
+      // Check if it's a token expiration error
+      const errorCode = error.response?.data?.error?.code;
+      if (errorCode === 'TOKEN_EXPIRED' || errorCode === 'TOKEN_INVALID' || errorCode === 'TOKEN_MALFORMED') {
+        console.log('Token expired or invalid, logging out user');
+        
+        // Clear storage
+        localStorage.removeItem('zerogate_token');
+        localStorage.removeItem('zerogate_user');
+        
+        // Call logout callback to update auth state
+        if (logoutCallback) {
+          logoutCallback();
+        } else {
+          // Fallback to redirect if callback not set
+          window.location.href = '/';
+        }
+        
+        // Create a more descriptive error for the UI
+        const expiredError = new Error('Your session has expired. Please log in again.');
+        expiredError.name = 'TokenExpiredError';
+        return Promise.reject(expiredError);
+      }
     }
     return Promise.reject(error);
   }

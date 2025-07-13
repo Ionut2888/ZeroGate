@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useReducer, useEffect } from 'react';
 import type { ReactNode } from 'react';
+import { setLogoutCallback } from '../utils/api';
 
 // Types
 export interface User {
@@ -22,6 +23,7 @@ export type AuthAction =
   | { type: 'AUTH_SUCCESS'; payload: { user: User; token: string } }
   | { type: 'AUTH_FAILURE'; payload: string }
   | { type: 'AUTH_LOGOUT' }
+  | { type: 'TOKEN_EXPIRED' }
   | { type: 'CLEAR_ERROR' };
 
 // Initial state
@@ -64,6 +66,11 @@ const authReducer = (state: AuthState, action: AuthAction): AuthState => {
       return {
         ...initialState,
       };
+    case 'TOKEN_EXPIRED':
+      return {
+        ...initialState,
+        error: 'Your session has expired. Please log in again.',
+      };
     case 'CLEAR_ERROR':
       return {
         ...state,
@@ -90,6 +97,21 @@ interface AuthProviderProps {
 
 export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
   const [state, dispatch] = useReducer(authReducer, initialState);
+
+  // Define logout function
+  const logout = (): void => {
+    dispatch({ type: 'AUTH_LOGOUT' });
+  };
+
+  // Define token expired handler for API interceptor
+  const handleTokenExpired = (): void => {
+    dispatch({ type: 'TOKEN_EXPIRED' });
+  };
+
+  // Set up logout callback for API client
+  useEffect(() => {
+    setLogoutCallback(handleTokenExpired);
+  }, []);
 
   // Load token from localStorage on mount
   useEffect(() => {
@@ -158,10 +180,6 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       });
       throw error;
     }
-  };
-
-  const logout = (): void => {
-    dispatch({ type: 'AUTH_LOGOUT' });
   };
 
   const clearError = (): void => {
