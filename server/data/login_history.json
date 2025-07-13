@@ -110,5 +110,187 @@
     "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
     "id": "login_1752396692592_c723etazd",
     "timestamp": "2025-07-13T08:51:32.592Z"
+  },
+  {
+    "username": "adi",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 18,
+      "proofSize": 724,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752396783796_9qswqonty",
+    "timestamp": "2025-07-13T08:53:03.796Z"
+  },
+  {
+    "username": "ionut",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 1188,
+      "proofSize": 722,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752396893446_kc2grrce9",
+    "timestamp": "2025-07-13T08:54:53.446Z"
+  },
+  {
+    "username": "adi",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 15,
+      "proofSize": 721,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752396942936_yt1ixzxwa",
+    "timestamp": "2025-07-13T08:55:42.936Z"
+  },
+  {
+    "username": "ionut",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 1087,
+      "proofSize": 723,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752406949825_5qd24l2ee",
+    "timestamp": "2025-07-13T11:42:29.825Z"
+  },
+  {
+    "username": "ionut",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 147,
+      "proofSize": 724,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752415891522_kbmjfpdv5",
+    "timestamp": "2025-07-13T14:11:31.523Z"
+  },
+  {
+    "username": "adi",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 58,
+      "proofSize": 722,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752415905742_gh7k2lohb",
+    "timestamp": "2025-07-13T14:11:45.742Z"
+  },
+  {
+    "username": "ionut",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 1353,
+      "proofSize": 724,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752416360527_p9qfmsjkc",
+    "timestamp": "2025-07-13T14:19:20.527Z"
+  },
+  {
+    "username": "adi",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 70,
+      "proofSize": 723,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752416370028_utr0k6da6",
+    "timestamp": "2025-07-13T14:19:30.028Z"
+  },
+  {
+    "username": "ionut",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 61,
+      "proofSize": 725,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752416389565_cv6cofp4x",
+    "timestamp": "2025-07-13T14:19:49.565Z"
+  },
+  {
+    "username": "adi",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 1145,
+      "proofSize": 723,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752416701563_df5di8l59",
+    "timestamp": "2025-07-13T14:25:01.564Z"
+  },
+  {
+    "username": "alex",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 63,
+      "proofSize": 721,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752416771812_mqxirl7j7",
+    "timestamp": "2025-07-13T14:26:11.812Z"
+  },
+  {
+    "username": "ionut",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 70,
+      "proofSize": 723,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752416788100_bjx0aitzf",
+    "timestamp": "2025-07-13T14:26:28.100Z"
+  },
+  {
+    "username": "alex",
+    "success": true,
+    "metrics": {
+      "generationTime": 0,
+      "verificationTime": 40,
+      "proofSize": 725,
+      "publicInputsCount": 2
+    },
+    "ipAddress": "::1",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36",
+    "id": "login_1752416866191_18gq6w4a1",
+    "timestamp": "2025-07-13T14:27:46.191Z"
   }
 ]

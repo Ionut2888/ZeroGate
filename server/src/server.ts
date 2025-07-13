@@ -36,16 +36,18 @@ app.use(helmet({
 // Compression middleware
 app.use(compression());
 
-// Rate limiting
-const limiter = rateLimit({
+// Rate limiting for login endpoints only
+const loginLimiter = rateLimit({
   windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '900000'), // 15 minutes
   max: parseInt(process.env.RATE_LIMIT_MAX || '100'), // limit each IP to 100 requests per windowMs
-  message: 'Too many requests from this IP, please try again later.',
+  message: 'Too many login attempts from this IP, please try again later.',
   standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
   legacyHeaders: false, // Disable the `X-RateLimit-*` headers
 });
 
-app.use('/api/', limiter);
+// Apply rate limiting only to login endpoints
+app.use('/api/auth/verify', loginLimiter);
+app.use('/api/auth/test-proof', loginLimiter);
 
 // Logging middleware
 if (process.env.NODE_ENV === 'production') {

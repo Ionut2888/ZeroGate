@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../contexts/AuthContext';
-import { generateProof, formatProofForSubmission, validateSecret, getPublicHash, getRegisteredUsers } from '../utils/snarkjs';
+import { generateProof, formatProofForSubmission, validateSecret, getPublicHash } from '../utils/snarkjs';
 
 interface LoginProps {
   onSwitchToRegister: () => void;
@@ -66,8 +66,6 @@ const Login: React.FC<LoginProps> = ({ onSwitchToRegister }) => {
   };
 
   const isLoading = loading || isGeneratingProof;
-  const registeredUsers = getRegisteredUsers();
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center px-4">
       <div className="max-w-md w-full space-y-8">
@@ -132,14 +130,6 @@ const Login: React.FC<LoginProps> = ({ onSwitchToRegister }) => {
                   <p className="mt-2 text-sm text-red-600">{validationError}</p>
                 )}
               </div>
-
-              {/* Show registered users if any exist */}
-              {registeredUsers.length > 0 && (
-                <div className="text-sm text-gray-600">
-                  <p className="font-medium">Registered users:</p>
-                  <p className="mt-1">{registeredUsers.join(', ')}</p>
-                </div>
-              )}
 
               {/* Error Alert */}
               {error && (

@@ -39,8 +39,6 @@ export default defineConfig({
     },
   },
   define: {
-    // Ensure environment variables are available
-    'process.env': process.env,
     // Define global for Node.js compatibility
     global: 'globalThis',
   },
